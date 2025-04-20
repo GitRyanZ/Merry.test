@@ -251,7 +251,7 @@ function showQuestion(index) {
         </div>
     `;
 
-    // 5秒后显示选项
+    // 10秒后显示选项
     setTimeout(() => {
         showOptions(index);
     }, 10000);
