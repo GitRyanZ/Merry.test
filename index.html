@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognition Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Recognition Test</h1>
+        
+        <form id="studentForm" class="student-form">
+            <div class="form-group">
+                <label for="name">姓名 (Name)</label>
+                <input type="text" id="name" name="name" required pattern="[a-zA-Z]+" title="Please enter English letters only">
+            </div>
+            
+            <div class="form-group">
+                <label for="studentNumber">学生编号 (Student Number)</label>
+                <input type="text" id="studentNumber" name="studentNumber" required pattern="[0-9]+" title="Please enter numbers only">
+            </div>
+        </form>
+
+        <div class="instructions">
+            <p>This test aims to assess your ability to distinguish between visually similar Chinese radicals. Your results will help improve teaching methods.</p>
+            <p>You will see 30 questions, each question asks you to identify the correct Chinese radical, the options will appear 5 seconds after the questions be shown, choose the <strong>BEST & ONLY</strong> answer from options A to D.</p>
+            <p>You will have 10s to answer each question. Once you answer the question, you will <strong>Not</strong> go back to check your answer.</p>
+            <p>You will have 20 minutes to finish this test.</p>
+        </div>
+
+        <button id="startExam" class="btn-primary">Start Exam</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
